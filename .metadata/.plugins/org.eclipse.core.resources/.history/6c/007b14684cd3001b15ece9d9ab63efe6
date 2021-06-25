@@ -1,0 +1,28 @@
+package bP;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Inputbox_button_link_textArea_imageButton {
+	
+	public static void main(String[] args) {
+		
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver= new ChromeDriver();
+		// URL visit
+		driver.get("https://nexchar.com/signin");
+		
+		//1. Id: Edit user name input box 1 using id locator
+		
+		driver.findElement(By.id("Email")).sendKeys("hamidsaymon9@gmail.com");
+		
+		//2. Name: Edit password input box 2 using name locator
+		
+		driver.findElement(By.name("Password")).sendKeys("Abc12345");
+		
+	}
+
+}

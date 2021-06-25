@@ -1,0 +1,17 @@
+package bP;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class LB {
+
+	// main method
+	public static void main(String[] args) {
+		
+		// Web Driver object creation
+		WebDriver driver= new FirefoxDriver();
+		//visit url
+		driver.get("https://mvnrepository.com/");
+	}
+}

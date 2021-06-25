@@ -1,0 +1,19 @@
+package bP;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class LbEasyway {
+	public static void main(String[] args) {
+		
+		// WebdriverManager setup
+		WebDriverManager.chromedriver().setup();
+		// WebDriver object create
+		WebDriver driver= new ChromeDriver();
+		// visit url
+		driver.get("https://acquireangel.com/");
+	}
+
+}
